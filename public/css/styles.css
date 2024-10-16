@@ -1,0 +1,139 @@
+@font-face {
+    font-family: helvetica;
+    src: url("../font/Helvetica.woff");
+}
+@font-face {
+    font-family: quad;
+    src: url("../font/Quad.woff");
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(-45deg, #e7a38e, #e189ab, #86bccf, #5cbfa8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.login-container {
+    margin: auto;
+    font-family: helvetica;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    background: #ffffff75;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 660px;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 95%;
+    margin: 5px;
+}
+
+label {
+    font-family: helvetica;
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffffff;
+}
+
+select {
+    font-family: helvetica;
+    width: 60%;
+    padding: 10px;
+    background-color: #EFF1F3;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+button {
+    font-family: helvetica;
+    width: 40%;
+    padding: 10px;
+    background-color: #EFF1F3;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+button:hover {
+    background-color: #EE9F8A;
+}
+
+#loginButton {
+    background-color: #2d9280; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px; /* Padding */
+    border-radius: 25px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-right: 10px; /* Space between buttons */
+}
+
+#loginButton:hover {
+    background-color: #1b7895; /* Darker green on hover */
+}
+
+#loginButton:disabled {
+    background-color: #CCCCCC;
+    color: #666666;  
+    cursor: not-allowed; 
+}
+
+#message {
+    font-family: helvetica;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+input, select {
+    font-family: helvetica;
+    width: 60%;
+    padding: 8px;
+    margin-left: 10px; /* Add space between label and input */
+    border-radius: 25px;
+    border: none;
+}
+
+label {
+    font-family: helvetica;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 150px; /* Adjust label width as needed */
+    display: inline-block; /* Ensures labels take space but do not break the line */
+    vertical-align: middle; /* Aligns the label with the input */
+}
+
+.form-group {
+    display: flex; /* Aligns label and input horizontally */
+    align-items: center; /* Centers items vertically */
+    margin-bottom: 15px; /* Space between groups */
+}
