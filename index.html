@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="icon" href="img/profile.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <br>
+  <div class="login-container">
+    <br>
+    <img src="./img/tu-logo.png" width="100" height="100" class="center" />
+    <h1>LOGIN</h1>
+    <hr>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username." oninput="checkForm()">
+        <span id="clearUsername" onclick="clearUsername()"> ❌</span>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password." oninput="checkForm()">
+        <span id="togglePassword" onclick="togglePassword()"> 👁️</span>
+      </div>
+
+      <div class="form-group">
+        <label for="role">Role:</label>
+        <select id="role" onchange="checkForm()">
+          <option value="0">Please select your role.</option>
+          <option value="1">Lecturer</option>
+          <option value="2">Student</option>
+        </select>
+      </div>
+      </p>
+      <button type="button" id="loginButton" onclick="submitLogin()" disabled>Login</button>
+      <button type="button" onclick="clearFields()">Clear</button>
+      <br>
+    </form>
+    <br>
+    <p id="message"></p>
+
+  </div>
+  <div>
+    <script src="js/script.js"></script>
+  </div>
+</body>
+
+</html>
