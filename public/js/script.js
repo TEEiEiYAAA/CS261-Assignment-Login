@@ -75,5 +75,7 @@ function clearFields() {
   document.getElementById('username').value = '';
   document.getElementById('password').value = '';
   document.getElementById('role').value = '0';
+  document.getElementById('message').innerText = 'Goodbye!';
+  document.getElementById('message').style.display = 'block';
   checkForm();
 }
